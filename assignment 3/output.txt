@@ -1,0 +1,114 @@
+----static----
+
+ls
+422213
+eg_dynamic.so
+end_lab
+fibbo1.o
+fibbo.c
+head.h
+main.c
+main_obj.o
+main_result_dynamic
+main_result_static
+matrix_mul1.o
+matrix_multi.c
+my_functions.c
+MYSQL.odt
+nano.save
+output_file.txt
+static_dynamic_commands_file.sh
+
+gcc -c fibbo.c -o fibbo1.o
+
+gcc -c matrix_multi.c -o matrix_mul1.o
+
+gcc -c main.c -o main_obj.o
+
+ls
+422213
+eg_dynamic.so
+end_lab
+fibbo1.o
+fibbo.c
+head.h
+main.c
+main_obj.o
+main_result_dynamic
+main_result_static
+matrix_mul1.o
+matrix_multi.c
+my_functions.c
+MYSQL.odt
+nano.save
+output_file.txt
+static_dynamic_commands_file.sh
+
+gcc main_obj.o fibbo1.o matrix_mul1.o -o main_result_static
+
+./main_result_static
+Enter the number of terms for Fibonacci series: Fibonacci series up to 12 terms:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 
+Resultant matrix after multiplication:
+19  22  
+43  50  
+
+ls
+422213
+eg_dynamic.so
+end_lab
+fibbo1.o
+fibbo.c
+head.h
+main.c
+main_obj.o
+main_result_dynamic
+main_result_static
+matrix_mul1.o
+matrix_multi.c
+my_functions.c
+MYSQL.odt
+nano.save
+output_file.txt
+static_dynamic_commands_file.sh
+
+----dynamic----
+
+gcc *.o -shared -o eg_dynamic.so
+
+ls
+422213
+eg_dynamic.so
+end_lab
+fibbo1.o
+fibbo.c
+head.h
+main.c
+main_obj.o
+main_result_dynamic
+main_result_static
+matrix_mul1.o
+matrix_multi.c
+my_functions.c
+MYSQL.odt
+nano.save
+output_file.txt
+static_dynamic_commands_file.sh
+
+gcc -o main_result_dynamic main_obj.o -L. eg_dynamic.so
+
+./main_result_dynamic
+Enter the number of terms for Fibonacci series: Fibonacci series up to 12 terms:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 
+Resultant matrix after multiplication:
+19  22  
+43  50  
+
+sudo cp eg_dynamic.so /usr/lib
+
+./main_result_dynamic
+Enter the number of terms for Fibonacci series: Fibonacci series up to 12 terms:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 
+Resultant matrix after multiplication:
+19  22  
+43  50  
