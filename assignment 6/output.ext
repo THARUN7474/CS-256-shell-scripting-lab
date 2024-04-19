@@ -1,0 +1,36 @@
+Comm command output:
+Comm output:
+File 1:
+	File 2:
+		apple
+banana
+	cherry
+Cron jobs:
+Difference between two files:
+1c1
+< File 1:
+---
+> File 2:
+3c3
+< banana
+---
+> cherry
+Login: naruto         			Name: naruto
+Directory: /home/naruto             	Shell: /usr/bin/zsh
+On since Fri Apr  5 11:03 (IST) on tty7 from :0
+   22 minutes 14 seconds idle
+No mail.
+No Plan.
+Find command output:
+./file1.txt
+./printfile.txt
+./vialearnfiles/copiedmark.txt
+./vialearnfiles/l1.txt
+./outputfile.txt
+./file2.txt
+./test.txt
+./lockedfile.txt
+./learn/b.txt
+FTP is a separate protocol and cannot be demonstrated in a shell script.
+Printing file:
+is n
